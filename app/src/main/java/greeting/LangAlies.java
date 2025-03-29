@@ -1,6 +1,8 @@
 package greeting;
 
 
+import javax.annotation.Nullable;
+
 /**
  * 사용자의 입력값을 검증하기 위한 enum 테이블을 생성합니다.
  * 해당 테이블은 korea, english, japan 이라는 문자열 입력에 대해 ko, en, jp 라는 문자열을 반환합니다.
@@ -23,6 +25,8 @@ public enum LangAlies {
     public String getInput(){
         return this.input;
     }
+
+    @Nullable
     public static String enumCheck(String input){
         for(LangAlies alies : values()){
             if(alies.name().equalsIgnoreCase(input)){
