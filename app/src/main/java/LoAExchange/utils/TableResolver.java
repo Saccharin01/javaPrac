@@ -20,7 +20,7 @@ public class TableResolver {
 
         for(LookupTable table : table) {
             if(table.getLabel().equalsIgnoreCase(input)
-                ||table.getAlies().equalsIgnoreCase(input)) {
+                ||table.getAlias().equalsIgnoreCase(input)) {
                 return table.getLabel();
             }
         }
