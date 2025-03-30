@@ -2,17 +2,17 @@ package LoAExchange.LookupTable;
 
 public class LookupTable {
     private String label;
-    private String alies;
+    private String alias;
 
     public LookupTable() {}
-    public LookupTable(String label, String alies) {
+    public LookupTable(String label, String alias) {
         this.label = label;
-        this.alies = alies;
+        this.alias = alias;
     }
     public String getLabel() {
         return this.label;
     }
-    public String getAlies() {
-        return this.alies;
+    public String getAlias() {
+        return this.alias;
     }
 }
