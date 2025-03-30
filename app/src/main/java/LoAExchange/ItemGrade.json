@@ -1,0 +1,7 @@
+[
+  { "label": "희귀", "alias": "rare" },
+  { "label": "영웅", "alias": "hero" },
+  { "label": "전설", "alias": "legend" },
+  { "label": "유물", "alias": "relic" },
+  { "label": "고대", "alias": "ancient" }
+]
