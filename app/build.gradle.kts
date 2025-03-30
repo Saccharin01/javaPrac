@@ -16,6 +16,12 @@ repositories {
 }
 
 dependencies {
+
+    //Lombock 모듈
+
+    implementation("org.projectlombok:lombok:1.18.30")
+    annotationProcessor("org.projectlombok:lombok:1.18.30")
+
     // Jackson 관련 모듈
     implementation("com.fasterxml.jackson.core:jackson-databind:2.17.0")
     implementation("com.fasterxml.jackson.core:jackson-core:2.17.0")
