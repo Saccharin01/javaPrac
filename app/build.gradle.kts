@@ -16,9 +16,16 @@ repositories {
 }
 
 dependencies {
+    // Jackson 관련 모듈
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.17.0")
+    implementation("com.fasterxml.jackson.core:jackson-core:2.17.0")
+    implementation("com.fasterxml.jackson.core:jackson-annotations:2.17.0")
+
+    // Java Dotenv
+    implementation("io.github.cdimascio:java-dotenv:5.2.2")
+
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("com.google.code.gson:gson:2.10.1")
-    implementation("io.github.cdimascio:java-dotenv:5.2.2")
 
     // Use JUnit Jupiter for testing.
     testImplementation(libs.junit.jupiter)
