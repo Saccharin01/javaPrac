@@ -24,7 +24,7 @@ public class RequestManager {
     }
 
     public void fetchAll(String itemName, String grade, String charClass) {
-        int page = 0;
+        int page = 1;
         List<ItemDTO> allItems = new ArrayList<>();
 
         while (true) {
