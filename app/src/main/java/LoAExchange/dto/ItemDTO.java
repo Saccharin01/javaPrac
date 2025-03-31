@@ -1,6 +1,7 @@
 // ItemDTO.java
 package LoAExchange.dto;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,11 +29,16 @@ public class ItemDTO {
     private int tradeRemainCount;
 
     @JsonProperty("YDayAvgPrice")
-    private double yDayAvgPrice;
+    private double YDayAvgPrice;
 
     @JsonProperty("RecentPrice")
     private int recentPrice;
 
     @JsonProperty("CurrentMinPrice")
     private int currentMinPrice;
+
+    @JsonGetter("YDayAvgPrice")
+    public double getYDayAvgPrice() {
+        return YDayAvgPrice;
+    }
 }
