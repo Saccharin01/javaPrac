@@ -17,8 +17,10 @@ repositories {
 
 dependencies {
 
-    //Lombock 모듈
+    // JDBC 모듈
+    implementation("org.mariadb.jdbc:mariadb-java-client:3.1.4")
 
+    //Lombock 모듈
     implementation("org.projectlombok:lombok:1.18.30")
     annotationProcessor("org.projectlombok:lombok:1.18.30")
 
