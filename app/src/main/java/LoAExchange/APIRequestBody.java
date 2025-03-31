@@ -39,6 +39,21 @@ public class APIRequestBody {
                 .build();
     }
 
+    /**
+     * 오버로딩 메서드입니다. 반복 요청을 위한 pageNo 매개변수가 추가되었습니다.
+     * @param pageNo 페이지 번호를 나타내는 정수값 매개변수입니다.
+     * @return
+     */
+
+    public RequestPayload createRequestPayload(String itemName, String inputGrade, String inputClass, int pageNo) {
+        return RequestPayload.builder()
+                .itemName(itemName)
+                .itemGrade(resolveItemGrade(inputGrade))
+                .characterClass(resolveCharClass(inputClass))
+                .pageNo(pageNo)
+                .build();
+    }
+
     /** createRequestPayload 메서드의 오버로딩 메서드입니다. DTO에서 아이템 이름은 기본값으로 지정되어 있기 때문에
      * 해당 메서드를 이용해 아이템 이름에 대한 선택적 매개변수를 도모합니다.
      */
