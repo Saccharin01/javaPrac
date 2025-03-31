@@ -28,8 +28,9 @@ public class RequestPayload {
     @Builder.Default
     private String sortCondition = "ASC";
 
-
+    @Builder.Default
     private Object itemTier = null;
+
     private String characterClass;
     private String itemGrade;
 }
